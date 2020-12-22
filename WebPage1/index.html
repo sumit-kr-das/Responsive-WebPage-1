@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="hero">
+        
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="dgbusiness.png" alt="">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <!-- this is hamburger menu -->
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Recipie</a></li>
+                </ul>
+                <button type="button" class="btn">Sign Up</button>
+            </div>
+            <!-- this is hamburger menu -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>  
+
+
+        <div class="banner-title">
+            <h1>Food <span>Doesn't have <br>a religion.</span> It is rligion</h1>
+            <button type="button" class="btn">Explore</button>
+        </div>
+
+        <div class="vartical-bar">
+
+
+            <div class="search-icons">
+                <i class="fa fa-th-list"></i>
+                <i class="fa fa-search"></i>
+            </div>
+
+
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+
+
+        </div>
+
+        <div class="notifications">
+
+            <div class="contents">
+                <small>Subscribe Easy Totrials YouTube channel and never miss any new videos.</small>
+                <p><a href="#">prev</a><a href="#">next</a></p>
+            </div>
+            <div class="notification-img">
+                <img src="not.jpg" width="200px" >
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <script>
+        var show = document.getElementById("nav-links");
+        function showMenu(){
+            show.style.right="0";
+        }
+        function closeMenu(){
+            show.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
